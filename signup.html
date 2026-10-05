@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TasteRate – Sign up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="site-title">🍽️ Feedback Management System</div>
+    <small>Restaurant &amp; Food Reviews</small>
+  </header>
+
+  <div class="auth">
+    <div class="hero">
+      <h1>Join TasteRate</h1>
+      <p>Create a free account to rate restaurants and share your food experience.</p>
+    </div>
+
+    <div class="card box">
+      <h3>Create account</h3>
+      <p id="msg" class="msg"></p>
+
+      <label>Full name</label>
+      <input id="sName" placeholder="Your name">
+
+      <label>Email</label>
+      <input id="sEmail" type="email" placeholder="you@example.com">
+
+      <label>Password (min 6 characters)</label>
+      <input id="sPass" type="password" placeholder="Password">
+
+      <label>Confirm password</label>
+      <input id="sConfirm" type="password" placeholder="Re-enter password">
+
+      <button id="signupBtn" style="width:100%">Sign up</button>
+
+      <p style="margin-top:14px;color:var(--muted)">
+        Already have an account? <a href="index.html">Login</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>

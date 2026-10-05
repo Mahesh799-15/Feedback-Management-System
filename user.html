@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TasteRate – User</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>TasteRate</h2>
+    <div><span id="hello"></span><button class="ghost" onclick="logout()">Logout</button></div>
+  </nav>
+
+  <main>
+    <h3>Restaurants</h3>
+    <div id="restList" class="grid"></div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Give feedback</h3>
+        <p id="msg" class="msg"></p>
+        <label>Restaurant</label>
+        <select id="restaurant"></select>
+        <label>Category</label>
+        <select id="category"></select>
+        <label>Your rating</label>
+        <div id="stars" class="stars"></div>
+        <label>Comment</label>
+        <textarea id="comment" rows="4" placeholder="Tell us about the food, service or give a suggestion"></textarea>
+        <button id="submitBtn" class="gold">Submit feedback</button>
+      </div>
+
+      <div>
+        <h3>My feedback</h3>
+        <div id="myList"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="user.js"></script>
+</body>
+</html>

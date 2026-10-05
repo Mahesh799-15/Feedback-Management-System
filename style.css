@@ -1,0 +1,62 @@
+/* Palette inspired by IMDb (yellow), BookMyShow (red) and District (dark) */
+:root{--bg:#121214;--card:#1d1d21;--line:#2e2e35;--text:#f2f2f2;--muted:#9a9aa5;--gold:#f5c518;--red:#f84464;--green:#3ecf8e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:var(--gold)}
+button{cursor:pointer;font:inherit;border:0;border-radius:8px;padding:10px 18px;background:var(--red);color:#fff;font-weight:600}
+button:hover{opacity:.88}
+button.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+button.gold{background:var(--gold);color:#111}
+input,select,textarea{width:100%;padding:10px 12px;margin:6px 0 14px;background:#121214;color:var(--text);border:1px solid var(--line);border-radius:8px;font:inherit}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:2px solid var(--gold)}
+label{font-size:.9rem;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.msg{font-size:.9rem;min-height:20px;margin-bottom:8px;color:var(--red)}
+.msg.ok{color:var(--green)}
+
+/* Navbar (Flexbox) */
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:#0b0b0d;border-bottom:3px solid var(--red)}
+nav h2{color:var(--gold)}
+nav div{display:flex;align-items:center;gap:14px}
+main{padding:24px 5%}
+h3{margin-bottom:12px}
+
+/* Main title bar on login / signup pages */
+.topbar{text-align:center;padding:14px 5%;background:#0b0b0d;border-bottom:3px solid var(--red)}
+.site-title{font-size:1.8rem;font-weight:700;color:var(--gold)}
+.topbar small{color:var(--muted)}
+
+/* Login page (Flexbox) */
+.auth{min-height:calc(100vh - 96px);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:50px;padding:30px 5%;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400") center/cover}
+.hero{max-width:460px}
+.hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:14px}
+.hero p{color:var(--muted)}
+.box{width:100%;max-width:380px}
+.tabs{display:flex;gap:8px;margin-bottom:18px}
+.tabs button{flex:1;background:transparent;border:1px solid var(--line);color:var(--muted)}
+.tabs button.active{background:var(--gold);color:#111;border-color:var(--gold)}
+.hidden{display:none}
+
+/* Layouts (CSS Grid) */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-bottom:28px}
+.two-col{display:grid;grid-template-columns:1fr 1.5fr;gap:24px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-bottom:24px}
+.stat b{display:block;font-size:2rem;color:var(--gold)}
+@media(max-width:800px){.two-col{grid-template-columns:1fr}}
+
+.rest{text-align:center}
+.rest .icon{font-size:2.4rem}
+.rate{color:var(--gold);font-weight:700}
+.stars span{font-size:1.8rem;cursor:pointer;color:#555}
+.stars span.on{color:var(--gold)}
+.fb{margin-bottom:12px}
+.fb-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tag{font-size:.75rem;padding:2px 10px;border-radius:20px;border:1px solid var(--line);color:var(--muted)}
+.tag.Pending{color:var(--gold);border-color:var(--gold)}
+.tag.Resolved{color:var(--green);border-color:var(--green)}
+.reply{margin-top:8px;padding:8px 12px;border-left:3px solid var(--green);background:#121214;font-size:.9rem}
+.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.filters select{width:auto;margin:0}
+.bar{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:.9rem}
+.bar i{display:block;height:10px;background:var(--gold);border-radius:5px}
