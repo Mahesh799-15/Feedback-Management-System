@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TasteRate – Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>TasteRate Admin</h2>
+    <div><span id="hello"></span><button class="ghost" onclick="logout()">Logout</button></div>
+  </nav>
+
+  <main>
+    <div id="stats" class="stats"></div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Rating breakdown</h3>
+        <div id="bars"></div>
+      </div>
+
+      <div>
+        <h3>All feedback</h3>
+        <div class="filters">
+          <select id="fRest"></select>
+          <select id="fCat"></select>
+          <select id="fStatus">
+            <option value="">All status</option>
+            <option>Pending</option>
+            <option>Resolved</option>
+          </select>
+        </div>
+        <div id="list"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
